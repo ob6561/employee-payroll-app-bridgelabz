@@ -99,3 +99,8 @@
     border-radius: 50%;
     margin-left: 12px;
 }
+/* Use case 4 */
+.salary-output {
+    margin-left: 20px;
+    font-weight: bold;
+}
