@@ -12,19 +12,61 @@
         Employee Payroll
     </header>
 
-
     <div class="container">
         <div class="form-content">
             <form class="form" action="#" onsubmit="return false">
+
                 <div class="form-head">
                     Employee Payroll Form
                 </div>
+
+                <!-- Name Row -->
                 <div class="row-content">
                     <label class="label text" for="name">Name</label>
-                    <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+                    <input class="input" type="text" id="name" name="name"
+                           placeholder="Your name.." required>
                 </div>
+
+                <!-- Profile Image Row -->
+                <div class="row-content">
+                    <label class="label text" for="profile">Profile image</label>
+
+                    <div class="profile-radio-content">
+
+                        <label>
+                            <input type="radio" name="profile"
+                                   value="./assets/profile-images/Ellipse -3.png" required>
+                            <img class="profile"
+                                 src="./assets/profile-images/Ellipse -3.png" />
+                        </label>
+
+                        <label>
+                            <input type="radio" name="profile"
+                                   value="./assets/profile-images/Ellipse 1.png">
+                            <img class="profile"
+                                 src="./assets/profile-images/Ellipse 1.png" />
+                        </label>
+
+                        <label>
+                            <input type="radio" name="profile"
+                                   value="./assets/profile-images/Ellipse -8.png">
+                            <img class="profile"
+                                 src="./assets/profile-images/Ellipse -8.png" />
+                        </label>
+
+                        <label>
+                            <input type="radio" name="profile"
+                                   value="./assets/profile-images/Ellipse -7.png">
+                            <img class="profile"
+                                 src="./assets/profile-images/Ellipse -7.png" />
+                        </label>
+
+                    </div>
+                </div>
+
             </form>
         </div>
     </div>
+
 </body>
 </html>
