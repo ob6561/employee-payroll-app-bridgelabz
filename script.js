@@ -44,10 +44,25 @@ class EmployeePayrollData{
     get salary() { return this._salary; }
 
     
+    
     set startDate(startDate) {
-        this._startDate = startDate;
+    let now = new Date();
+    let inputDate = new Date(startDate);
+
+    if (inputDate > now) {
+        throw 'Start Date cannot be a future date';
+    }
+
+    let diffDays = Math.floor((now - inputDate) / (1000 * 60 * 60 * 24));
+
+    if (diffDays > 30) {
+        throw 'Start Date must be within 30 days of joining';
+    }
+
+    this._startDate = startDate;
     }
     get startDate() { return this._startDate; }
+
     set notes(notes) {
         this._notes = notes;
     }
